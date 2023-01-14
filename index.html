@@ -41,8 +41,10 @@
           <a href="#about">About</a>
         </div>
         <div class="sign">
-          <a class="left" href="#sign-in">sign in</a>
-          <a class="left" href="#sign-out">sign out</a>
+          <div>
+            <a class="left" href="#sign-in">sign in</a>
+            <a class="left" href="#sign-out">sign out</a>
+          </div>
           <div class="cart-modal-overlay">
             <div class="cart-modal">
               <svg
@@ -137,7 +139,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">10.5</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon1" onclick="Toggle(0)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -160,7 +162,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">25</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon2" onclick="Toggle(1)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -183,7 +185,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">30</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon3" onclick="Toggle(2)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -206,7 +208,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">12</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon4" onclick="Toggle(3)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -229,7 +231,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">8</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon5" onclick="Toggle(4)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -249,11 +251,27 @@
       <div class="card-1 card">
         <img
           class="product-image"
-          src="https://imgs.search.brave.com/yJPBTf99w2Q6ZVY4fjXEdDnXx9K1tS85ikoNsUQQJ2w/rs:fit:768:534:1/g:ce/aHR0cHM6Ly93d3cu/bmF0dXJhbGZvb2Rz/ZXJpZXMuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE4LzAx/L1JlZC1HcmFwZXMt/NzY4eDUzNC5qcGc"
+          src="https://imgs.search.brave.com/k9tZbtuxzN3wg_W2DRPnVqBYXVz27ctIju1vpioKnxU/rs:fit:1200:1200:1/g:ce/aHR0cDovL2ltYWdl/czYuZmFucG9wLmNv/bS9pbWFnZS9waG90/b3MvMzQ3MDAwMDAv/R3JhcGVzLWZydWl0/LTM0NzMzMzkyLTI1/NjAtMTYwMC5qcGc"
           alt="grapes"
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">15</span>
+        <div class="icon-container">
+          <div class="iconn" id="icon6" onclick="Toggle(5)">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-bag-heart-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"
+              />
+            </svg>
+          </div>
+        </div>
       </div>
       <div class="card-2 card">
         <img
@@ -263,7 +281,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">25</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon7" onclick="Toggle(6)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -286,7 +304,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">8</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon8" onclick="Toggle(7)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -309,7 +327,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">20</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon9" onclick="Toggle(8)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -332,7 +350,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">40</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon10" onclick="Toggle(9)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -364,7 +382,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">5</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon11" onclick="Toggle(10)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -387,7 +405,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">6</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon12" onclick="Toggle(11)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -410,7 +428,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">26</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon13" onclick="Toggle(12)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -433,7 +451,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">15</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon14" onclick="Toggle(13)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -456,7 +474,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">10</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon15" onclick="Toggle(14)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -481,7 +499,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">10.5</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon16" onclick="Toggle(15)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -504,7 +522,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">30</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon17" onclick="Toggle(16)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -527,7 +545,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">35</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon18" onclick="Toggle(17)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -550,7 +568,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">9</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon19" onclick="Toggle(18)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -573,7 +591,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">8</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon20" onclick="Toggle(19)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -606,7 +624,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">80</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon21" onclick="Toggle(20)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -629,7 +647,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">100</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon22" onclick="Toggle(21)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -652,7 +670,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">200</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon23" onclick="Toggle(22)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -675,7 +693,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">120</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon24" onclick="Toggle(23)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -698,7 +716,7 @@
         />
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price">8</span>
-        <div class="iconn" onclick="Toggle()">
+        <div class="iconn" id="icon25" onclick="Toggle(24)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
